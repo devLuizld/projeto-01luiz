@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'letrabonita';
+    src: url('fonts/ORGANICAL\ PERSONAL\ USE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cursiva-paragrafo';
+    src: url('fonts/LearningCurve.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    /* esses dois ocupam 100% da tela disponível */
+    width: 100vw;
+
+
+
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    background-attachment: fixed;
+    background-image: linear-gradient(to top, #1971EB,
+            #426596, #01193a)
+}
+
+.slider {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+
+
+
+
+
+}
+
+.slides {
+    width: 300px;
+    height: 300px;
+    display: flexbox;
+}
+
+.slides input {
+    display: none;
+
+}
+
+.slide {
+
+    width 40%;
+    position: relative;
+}
+
+.slide img {
+
+    width: 300px;
+
+
+}
+
+
+
+.manual-btn:not(:last-child) {
+    margin-right: 25px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 300px;
+    margin-top: -30px;
+    display: flex;
+    margin-left: 47.5%;
+
+}
+
+.manual-btn {
+    border: 2px solid floralwhite;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:hover {
+    background-color: rgb(227, 232, 232);
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+
+}
+
+#radio2:checked~.first {
+    margin-top: -120%;
+
+}
+
+#radio3:checked~.first {
+    margin-top: -230%;
+
+}
+
+/*
+#radio1:checked ~ .navegation-auto .auto-btn1{
+    background-color: aquamarine;
+}
+
+#radio2:checked ~ .navegation-auto .auto-btn2{
+    background-color: aquamarine;
+}
+
+
+#radio3:checked ~ .navegation-auto .auto-btn3{
+    background-color: aquamarine;
+}
+*/
+h1 {
+    color: #000000;
+    font-family: 'letrabonita', Arial, Helvetica, sans-serif;
+
+}
+
+
+
+h2 {
+
+    font-family: '', Arial, Helvetica, sans-serif;
+    background-color: #f3440e;
+    color: #000000
+}
+
+td {
+    font-family: 'cursiva-paragrafo', Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #0a0000;
+
+}
+
+td img {
+    /* imagem dos slides*/
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+
+}
+
+
+ul {
+    color: #000000
+}
+
+main {
+
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+    width: 1400px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px;
+
+
+}
+
+h1 {
+    background-color: rgb(212, 225, 231);
+    color: #000000 box-shadow: 1px 3px 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+.redes ul a img {
+    max-width: 80px;
+    /* modifica o tamnho da imagem das redes sociais */
+
+}
+
+.redes ul {
+    display: flex;
+    /* coloca a li lado a lado */
+    justify-content: center;
+
+
+}
+
+/* altera a distância entre as imagens*/
+.redes ul a {
+    display: block;
+    padding: 10px;
+
+}
+
+/* menu*/
+nav.menu-lateral {
+
+    width: 70px;
+    height: 250px;
+    background-color: #1a1a1c90;
+    padding: 20px 0 20px 1%;
+    box-shadow: 3px 0 0 #0a0a0a3c;
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: 3px 0 0 #f3440e;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir {
+    width: 200px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 40px;
+}
+
+.btn-expandir>i {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+/*tag que faz passar o mouse em cima e ficar colorido */
+ul li.item-menu:hover {
+    background-color: #f3440e;
+}
+
+ul li.item-menu {
+    transition: .2s;
+
+}
+
+ul li.ativo {
+    background-color: #f3440e;
+}
+
+
+ul li.item-menu a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 2%;
+    display: flex;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 50px;
+    transition: .6s;
+    opacity: 0;
+
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 15px;
+    opacity: 1;
+
+}
+
+p {
+    color: darkblue;
+    font-family: Verdana, Tahoma, sans-serif, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.videos {
+    list-style: none;
+    padding: 0;
+
+}
+
+.videos li {
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.videos inframe {
+    width: 100%;
+    height: auto;
+
+}
+
+.meuAudio {
+    width: 400px;
+}
+
+.meuAudio {
+    background-color: #f3440e;
+    border-radius: 5px;
+
+}
+
+.meuAudio:hover {
+    background-color: #1971EB;
+}
+
+.meuAudio {
+    margin-bottom: 40px;
+
+}
