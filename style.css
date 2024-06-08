@@ -209,7 +209,7 @@ nav.menu-lateral {
     padding: 20px 0 20px 1%;
     box-shadow: 3px 0 0 #0a0a0a3c;
     border-radius: 20px;
-    position: ;
+    position: absolute ;
     box-shadow: 3px 0 0 #f3440e;
     overflow: hidden;
     transition: .5s;
@@ -317,5 +317,5 @@ p {
 }
 
 .menu-lateral {
-  z-index: 1001; /* ou um valor maior do que o z-index do slider */
+  z-index: 1001; 
 }
