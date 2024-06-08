@@ -278,3 +278,45 @@ p {
         opacity: 0;
     }
 }
+/* Estilos para o menu lateral no celular */
+.menu-lateral-mobile {
+    display: none; /* Oculta o menu por padrão */
+}
+
+/* Mostra o menu apenas em dispositivos móveis com largura máxima de 768px */
+@media screen and (max-width: 768px) {
+    .menu-lateral-mobile {
+        display: block; /* Mostra o menu */
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 70px; /* Largura do menu */
+        background-color: #1a1a1c90;
+        padding-top: 20px;
+        z-index: 1000; /* Garante que o menu esteja acima do conteúdo */
+    }
+    .menu-lateral-mobile ul {
+        padding-left: 0;
+    }
+    .menu-lateral-mobile ul li {
+        list-style: none;
+    }
+    .menu-lateral-mobile ul li a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .menu-lateral-mobile ul li a .icon {
+        margin-right: 10px;
+    }
+}
+
+/* Esconde o menu lateral no navegador em dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .menu-lateral {
+        display: none; /* Esconde o menu lateral */
+    }
+}
