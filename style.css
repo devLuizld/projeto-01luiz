@@ -209,7 +209,7 @@ nav.menu-lateral {
     padding: 20px 0 20px 1%;
     box-shadow: 3px 0 0 #0a0a0a3c;
     border-radius: 20px;
-    position: absolute;
+    position: ;
     box-shadow: 3px 0 0 #f3440e;
     overflow: hidden;
     transition: .5s;
@@ -314,5 +314,7 @@ p {
 
 .meuAudio {
     margin-bottom: 40px;
-
 }
+.menu-lateral{
+    z-index: 1001;}
+
