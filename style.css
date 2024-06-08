@@ -17,32 +17,18 @@ body {
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
-    /* esses dois ocupam 100% da tela disponível */
     width: 100vw;
-
-
-
-
-
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     background-attachment: fixed;
-    background-image: linear-gradient(to top, #1971EB,
-            #426596, #01193a)
+    background-image: linear-gradient(to top, #1971EB, #426596, #01193a);
 }
 
 .slider {
-
-
     margin: 0 auto;
     width: 300px;
     height: 300px;
     overflow: hidden;
-
-
-
-
-
 }
 
 .slides {
@@ -53,23 +39,16 @@ body {
 
 .slides input {
     display: none;
-
 }
 
 .slide {
-
-    width 40%;
+    width: 40%;
     position: relative;
 }
 
 .slide img {
-
     width: 300px;
-
-
 }
-
-
 
 .manual-btn:not(:last-child) {
     margin-right: 25px;
@@ -81,7 +60,6 @@ body {
     margin-top: -30px;
     display: flex;
     margin-left: 47.5%;
-
 }
 
 .manual-btn {
@@ -98,128 +76,90 @@ body {
 
 #radio1:checked~.first {
     margin-left: 0;
-
 }
 
 #radio2:checked~.first {
     margin-top: -120%;
-
 }
 
 #radio3:checked~.first {
     margin-top: -230%;
-
 }
 
-/*
-#radio1:checked ~ .navegation-auto .auto-btn1{
-    background-color: aquamarine;
-}
-
-#radio2:checked ~ .navegation-auto .auto-btn2{
-    background-color: aquamarine;
-}
-
-
-#radio3:checked ~ .navegation-auto .auto-btn3{
-    background-color: aquamarine;
-}
-*/
 h1 {
     color: #000000;
     font-family: 'letrabonita', Arial, Helvetica, sans-serif;
-
 }
 
-
-
 h2 {
-
     font-family: '', Arial, Helvetica, sans-serif;
     background-color: #f3440e;
-    color: #000000
+    color: #000000;
 }
 
 td {
     font-family: 'cursiva-paragrafo', Arial, Helvetica, sans-serif;
     font-size: 50px;
     color: #0a0000;
-
 }
 
 td img {
-    /* imagem dos slides*/
     width: 350px;
     height: 350px;
     border-radius: 20px;
-
 }
 
-
 ul {
-    color: #000000
+    color: #000000;
 }
 
 main {
-
     background-color: white;
     margin: auto;
     border-radius: 15px;
     width: 1400px;
     padding: 10px;
     box-shadow: 10px 10px 10px;
-
-
 }
 
 h1 {
     background-color: rgb(212, 225, 231);
-    color: #000000 box-shadow: 1px 3px 5px;
+    color: #000000;
+    box-shadow: 1px 3px 5px;
     text-align: center;
     border-radius: 10px;
 }
 
-
-
 .redes ul a img {
     max-width: 80px;
-    /* modifica o tamnho da imagem das redes sociais */
-
 }
 
 .redes ul {
     display: flex;
-    /* coloca a li lado a lado */
     justify-content: center;
-
-
 }
 
-/* altera a distância entre as imagens*/
 .redes ul a {
     display: block;
     padding: 10px;
-
 }
-
-/* menu*/
 
 nav.menu-lateral {
     margin-top: 125px;
     position: absolute;
     top: 0;
-    right: 0; /* Alterado de 'left: 0' para 'right: 0' */
+    right: 0;
     width: 70px;
     height: 40vh;
     background-color: #1a1a1c90;
-    padding: 20px 1% 20px 0; /* Ajuste do preenchimento para o lado direito */
-    box-shadow: -3px 0 0 #0a0a0a3c; /* Alteração para a sombra aparecer à esquerda */
+    padding: 20px 1% 20px 0;
+    box-shadow: -3px 0 0 #0a0a0a3c;
     border-radius: 20px;
     z-index: 1;
 }
 
 main {
-    margin-right: 80px; /* Espaço para o menu lateral */
+    margin-right: 80px;
 }
 
 nav.menu-lateral.expandir {
@@ -242,23 +182,19 @@ ul {
     list-style-type: none;
 }
 
-/*tag que faz passar o mouse em cima e ficar colorido */
 ul li.item-menu:hover {
     background-color: #f3440e;
 }
 
 ul li.item-menu {
     transition: .2s;
-
 }
 
 ul li.ativo {
     background-color: #f3440e;
 }
 
-
 ul li.item-menu a {
-
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -272,13 +208,11 @@ ul li.item-menu a .txt-link {
     margin-left: 50px;
     transition: .6s;
     opacity: 0;
-
 }
 
 nav.menu-lateral.expandir .txt-link {
     margin-left: 15px;
     opacity: 1;
-
 }
 
 p {
@@ -290,7 +224,6 @@ p {
 .videos {
     list-style: none;
     padding: 0;
-
 }
 
 .videos li {
@@ -302,7 +235,6 @@ p {
 .videos inframe {
     width: 100%;
     height: auto;
-
 }
 
 .meuAudio {
@@ -312,7 +244,6 @@ p {
 .meuAudio {
     background-color: #f3440e;
     border-radius: 5px;
-
 }
 
 .meuAudio:hover {
@@ -321,5 +252,4 @@ p {
 
 .meuAudio {
     margin-bottom: 40px;
-
 }
