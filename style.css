@@ -201,9 +201,9 @@ h1 {
 }
 
 /* menu*/
-@madia screenand (max-width:768ox){
+@madia screenand (max-width:100px){
 nav.menu-lateral {
-    width: 100%;
+    width: 70px;
     top: 0;
     right: 0;
     height: 100%;
