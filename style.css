@@ -315,6 +315,7 @@ p {
 .meuAudio {
     margin-bottom: 40px;
 }
-.menu-lateral{
-    z-index: 1001;}
 
+.menu-lateral {
+  z-index: 1001; /* ou um valor maior do que o z-index do slider */
+}
