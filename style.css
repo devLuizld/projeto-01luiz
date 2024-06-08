@@ -40,7 +40,6 @@ body {
 
 
 
-
 }
 
 .slides {
@@ -201,34 +200,19 @@ h1 {
 }
 
 /* menu*/
-@madia screenand (max-width:100px){
+
 nav.menu-lateral {
+
     width: 70px;
-    top: 0;
-    right: 0;
-    height: 100%;
+    height: 250px;
     background-color: #1a1a1c90;
-    z-index: 1000;
     padding: 20px 0 20px 1%;
     box-shadow: 3px 0 0 #0a0a0a3c;
     border-radius: 20px;
-    position: fixed ;
+    position: absolute;
     box-shadow: 3px 0 0 #f3440e;
     overflow: hidden;
     transition: .5s;
-  .menu-lateral ul {
-    padding-top: 60px;
-  }
-
-  .menu-lateral ul li {
-    padding: 20px;
-  }
-
-  .menu-lateral ul li a {
-    font-size: 18px;
-  }
-}
-    
 }
 
 nav.menu-lateral.expandir {
@@ -330,8 +314,5 @@ p {
 
 .meuAudio {
     margin-bottom: 40px;
+
 }
-
-
-
-  
