@@ -21,7 +21,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     background-attachment: fixed;
-    background-image: linear-gradient(to top, #1971EB, #426596, #01193a);
+    background-image: linear-gradient(to top, #1971EB, #426596, #01193a)
 }
 
 .slider {
@@ -94,7 +94,7 @@ h1 {
 h2 {
     font-family: '', Arial, Helvetica, sans-serif;
     background-color: #f3440e;
-    color: #000000;
+    color: #000000
 }
 
 td {
@@ -110,7 +110,7 @@ td img {
 }
 
 ul {
-    color: #000000;
+    color: #000000
 }
 
 main {
@@ -124,8 +124,7 @@ main {
 
 h1 {
     background-color: rgb(212, 225, 231);
-    color: #000000;
-    box-shadow: 1px 3px 5px;
+    color: #000000 box-shadow: 1px 3px 5px;
     text-align: center;
     border-radius: 10px;
 }
@@ -242,15 +241,6 @@ p {
 }
 
 .meuAudio {
-    background-color: #f3440e;
-    border-radius: 5px;
-}
-
-.meuAudio:hover {
-    background-color: #1971EB;
-}
-
-.meuAudio {
     margin-bottom: 90px;
 }
 
@@ -266,7 +256,6 @@ p {
         box-shadow: none;
         border-radius: 0;
         z-index: 1;
-        margin-right: 10px; /* Afasta o menu do slide */
     }
 
     main {
