@@ -201,18 +201,34 @@ h1 {
 }
 
 /* menu*/
+@madia screenand (max-width:768ox){
 nav.menu-lateral {
-
-    width: 70px;
-    height: 250px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 100%;
     background-color: #1a1a1c90;
+    z-index: 1000;
     padding: 20px 0 20px 1%;
     box-shadow: 3px 0 0 #0a0a0a3c;
     border-radius: 20px;
-    position: absolute ;
+    position: fixed ;
     box-shadow: 3px 0 0 #f3440e;
     overflow: hidden;
     transition: .5s;
+  .menu-lateral ul {
+    padding-top: 60px;
+  }
+
+  .menu-lateral ul li {
+    padding: 20px;
+  }
+
+  .menu-lateral ul li a {
+    font-size: 18px;
+  }
+}
+    
 }
 
 nav.menu-lateral.expandir {
@@ -316,28 +332,6 @@ p {
     margin-bottom: 40px;
 }
 
-@media screen and (max-width: 768px) {
-  .menu-lateral {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    right: 0; /* Posiciona o menu no lado direito */
-    height: 100%;
-    background-color: #333;
-    z-index: 1000;
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
 
-  .menu-lateral ul {
-    padding-top: 60px;
-  }
 
-  .menu-lateral ul li {
-    padding: 20px;
-  }
-
-  .menu-lateral ul li a {
-    font-size: 18px;
-  }
-}
+  
