@@ -284,7 +284,7 @@ p {
 }
 
 /* Mostra o menu apenas em dispositivos móveis com largura máxima de 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) 
     .menu-lateral-mobile {
         display: block; /* Mostra o menu */
         position: fixed;
@@ -296,24 +296,7 @@ p {
         padding-top: 20px;
         z-index: 1000; /* Garante que o menu esteja acima do conteúdo */
     }
-    .menu-lateral-mobile ul {
-        padding-left: 0;
-    }
-    .menu-lateral-mobile ul li {
-        list-style: none;
-    }
-    .menu-lateral-mobile ul li a {
-        display: block;
-        padding: 10px;
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-    }
-    .menu-lateral-mobile ul li a .icon {
-        margin-right: 10px;
-    }
-}
-
+   
 /* Esconde o menu lateral no navegador em dispositivos móveis */
 @media screen and (max-width: 768px) {
     .menu-lateral {
