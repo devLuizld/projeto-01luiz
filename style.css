@@ -205,12 +205,13 @@ h1 {
 /* menu*/
 
 nav.menu-lateral {
+    margin-top: 125px;
     position: absolute;
     top: 0;
     left: 0;
     width: 70px;
     /* Ajuste conforme necessário */
-    height: 57vh;
+    height: 40vh;
     /* Ocupa toda a altura da viewport */
     background-color: #1a1a1c90;
     padding: 20px 0 20px 1%;
