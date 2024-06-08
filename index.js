@@ -43,14 +43,5 @@ btnExp.addEventListener('click', function(){
 
 })
 
-document.addEventListener('DOMContentLoaded', function () {
-    const menuButton = document.getElementById('btn-exp');
-    const menu = document.querySelector('.menu-lateral');
 
-    // Adiciona um evento de clique ao botão do menu
-    menuButton.addEventListener('click', function () {
-        // Adiciona ou remove a classe 'expandir' do menu
-        menu.classList.toggle('expandir');
-    });
-});
 
