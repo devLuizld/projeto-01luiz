@@ -208,24 +208,18 @@ nav.menu-lateral {
     margin-top: 125px;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0; /* Alterado de 'left: 0' para 'right: 0' */
     width: 70px;
-    /* Ajuste conforme necessário */
     height: 40vh;
-    /* Ocupa toda a altura da viewport */
     background-color: #1a1a1c90;
-    padding: 20px 0 20px 1%;
-    box-shadow: 3px 0 0 #0a0a0a3c;
+    padding: 20px 1% 20px 0; /* Ajuste do preenchimento para o lado direito */
+    box-shadow: -3px 0 0 #0a0a0a3c; /* Alteração para a sombra aparecer à esquerda */
     border-radius: 20px;
     z-index: 1;
-    /* Coloca o menu atrás do conteúdo principal */
-    /* Outros estilos do menu lateral */
 }
 
 main {
-    margin-left: 80px;
-    /* Espaço para o menu lateral */
-    /* Outros estilos do conteúdo principal */
+    margin-right: 80px; /* Espaço para o menu lateral */
 }
 
 nav.menu-lateral.expandir {
