@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'letrabonita';
+    src: url('fonts/ORGANICAL\ PERSONAL\ USE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cursiva-paragrafo';
+    src: url('fonts/LearningCurve.ttf') format('truetype');
+}
+
+
+/* Estilos para o título */
+h1 {
+    font-family: 'letrabonita', Arial, sans-serif;
+    color: #f35906; /* Cor do texto do título */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 3rem; /* Ajuste o tamanho do título */
+}
+
+/* Estilos para subtítulos */
+h2 {
+    font-family: 'cursiva-paragrafo', Arial, sans-serif;
+    color: #e7680e; /* Cor do texto dos subtítulos */
+    text-align: center;
+    background-color: #b9bbc2; /* Cor de fundo do subtítulo */
+    margin-bottom: 20px; /* Ajuste o espaçamento abaixo do subtítulo */
+    padding: 10px; /* Adiciona um pouco de padding para o subtítulo */
+    font-size: 2rem; /* Ajuste o tamanho do subtítulo */
+}
+
+/* Estilos para o botão de voltar */
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #f6460c; /* Laranja */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 20px 0; /* Espaçamento vertical */
+}
+
+.btn-voltar:hover {
+    background-color: #1619e3; /* Laranja mais escuro para hover */
+    transform: scale(1.05);
+}
+
+.btn-voltar:active {
+    background-color: #3630d2; /* Laranja ainda mais escuro para active */
+}
+
+/* Estilos gerais do body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(59, 62, 62);
+}
+
+/* Estilos para a galeria de projetos */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0; /* Ajusta o espaçamento ao redor da galeria */
+}
+
+.item-projeto {
+    width: 400px; /* Largura fixa para cada item */
+    height: 400px; /* Altura fixa para cada item */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(245, 238, 238, 0.982);
+    transition: transform 0.3s ease;
+}
+
+.item-projeto img {
+    width: 100%; /* Ajusta a imagem para preencher o contêiner */
+    height: 90%; /* Ajusta a altura da imagem para preencher o contêiner */
+    object-fit: cover; /* Mantém a proporção da imagem e cobre o contêiner */
+    transition: transform 0.15s ease;
+}
+
+.item-projeto:hover {
+    transform: scale(1.4);
+}
+
+.item-projeto img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para o container de informações do projeto */
+.info-projeto {
+    background-color: #f5f5f5; /* Cor de fundo para o texto */
+    padding: 10px; /* Espaçamento interno */
+    border-top: 1px solid #ddd; /* Linha de separação entre imagem e texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para o nome do projeto */
+.nome-projeto {
+    font-family: Arial, Helvetica, sans-serif; /* Fonte do texto */
+    color: #333; /* Cor do texto do nome do projeto */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    margin: 0; /* Remove margens padrão */
+    font-weight: bold; /* Negrito para destacar o texto */
+}
