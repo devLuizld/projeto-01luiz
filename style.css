@@ -255,7 +255,7 @@ p {
 }
 
 /* Adicionando regras de mídia para dispositivos móveis */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
     nav.menu-lateral {
         top: 0;
         right: 0;
