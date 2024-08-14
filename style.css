@@ -143,13 +143,23 @@ h1 {
     padding: 10px;
 }
 
+.contact ul a img{
+max-width: 100px;
+
+} 
+
+.contact ul a{
+justify-content: center;
+display: flex;
+}
+
 nav.menu-lateral {
     margin-top: 125px;
     position: absolute;
     top: 0;
     right: 0;
     width: 70px;
-    height: 40vh;
+    height: 42vh;
     background-color: #1a1a1c90;
     padding: 20px 1% 20px 0;
     box-shadow: -3px 0 0 #0a0a0a3c;
@@ -277,16 +287,14 @@ p {
     nav.menu-lateral:not(.expandir) .txt-link {
         opacity: 0;
     }
-}
 /* Estilos para o menu lateral no celular */
-.menu-lateral-mobile {
-    display: none; /* Oculta o menu por padrão */
-}
+@media screen and (max-width: 768px) {
+    nav.menu-lateral {
+        display: none; /* Esconde o menu lateral principal */
+    }
 
-/* Mostra o menu apenas em dispositivos móveis com largura máxima de 768px */
-@media screen and (max-width: 768px) 
     .menu-lateral-mobile {
-        display: block; /* Mostra o menu */
+        display: block; /* Mostra o menu lateral móvel */
         position: fixed;
         top: 0;
         left: 0;
@@ -296,10 +304,25 @@ p {
         padding-top: 20px;
         z-index: 1000; /* Garante que o menu esteja acima do conteúdo */
     }
-   
-/* Esconde o menu lateral no navegador em dispositivos móveis */
-@media screen and (max-width: 768px) {
-    .menu-lateral {
-        display: none; /* Esconde o menu lateral */
+
+    /* Ajusta o conteúdo principal para não ser sobreposto pelo menu */
+    main {
+        margin-right: 0; /* Remove a margem direita quando o menu lateral está visível no celular */
+    }
+
+    nav.menu-lateral-mobile.expandir {
+        width: 200px; /* Largura expandida do menu lateral móvel */
+    }
+
+    .btn-expandir {
+        padding-left: 20px; /* Ajusta o padding do botão de expandir */
+    }
+
+    ul li.item-menu a .txt-link {
+        margin-left: 10px; /* Ajusta o espaçamento do texto do link */
+    }
+
+    nav.menu-lateral-mobile:not(.expandir) .txt-link {
+        opacity: 0; /* Torna o texto invisível quando não expandido */
     }
 }
