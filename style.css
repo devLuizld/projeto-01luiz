@@ -287,42 +287,31 @@ p {
     nav.menu-lateral:not(.expandir) .txt-link {
         opacity: 0;
     }
-/* Estilos para o menu lateral no celular */
+/* Estilos para o botão de projetos no celular */
+.project-button-container {
+    display: none; /* Oculta o botão por padrão */
+    position: fixed;
+    bottom: 20px; /* Posiciona o botão no canto inferior */
+    right: 20px; /* Posiciona o botão no canto direito */
+    z-index: 1000; /* Garante que o botão esteja acima do conteúdo */
+}
+
+.project-button {
+    background-color: #f3440e; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    font-size: 18px; /* Tamanho da fonte do botão */
+    font-family: Arial, sans-serif; /* Fonte do botão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para dispositivos móveis */
 @media screen and (max-width: 768px) {
-    nav.menu-lateral {
-        display: none; /* Esconde o menu lateral principal */
-    }
-
-    .menu-lateral-mobile {
-        display: block; /* Mostra o menu lateral móvel */
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 70px; /* Largura do menu */
-        background-color: #1a1a1c90;
-        padding-top: 20px;
-        z-index: 1000; /* Garante que o menu esteja acima do conteúdo */
-    }
-
-    /* Ajusta o conteúdo principal para não ser sobreposto pelo menu */
-    main {
-        margin-right: 0; /* Remove a margem direita quando o menu lateral está visível no celular */
-    }
-
-    nav.menu-lateral-mobile.expandir {
-        width: 200px; /* Largura expandida do menu lateral móvel */
-    }
-
-    .btn-expandir {
-        padding-left: 20px; /* Ajusta o padding do botão de expandir */
-    }
-
-    ul li.item-menu a .txt-link {
-        margin-left: 10px; /* Ajusta o espaçamento do texto do link */
-    }
-
-    nav.menu-lateral-mobile:not(.expandir) .txt-link {
-        opacity: 0; /* Torna o texto invisível quando não expandido */
+    .project-button-container {
+        display: block; /* Mostra o botão em dispositivos móveis */
     }
 }
