@@ -315,3 +315,38 @@ p {
         display: block; /* Mostra o botão em dispositivos móveis */
     }
 }
+/* Botão fixo para dispositivos móveis */
+.project-button-container {
+    display: none; /* Oculta o botão por padrão */
+    position: fixed;
+    bottom: 20px; /* Posiciona o botão no canto inferior */
+    right: 20px; /* Posiciona o botão no canto direito */
+    z-index: 1000; /* Garante que o botão esteja acima do conteúdo */
+}
+
+.project-button {
+    background-color: #f3440e; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 15px 25px; /* Espaçamento interno do botão */
+    border-radius: 10px; /* Bordas arredondadas do botão */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    font-size: 18px; /* Tamanho da fonte do botão */
+    font-family: Arial, sans-serif; /* Fonte do botão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do botão */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+.project-button:hover {
+    background-color: #d93d0e; /* Cor de fundo quando o botão é hover */
+    transform: scale(1.05); /* Aumenta o botão ligeiramente quando hover */
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .project-button-container {
+        display: block; /* Mostra o botão em dispositivos móveis */
+    }
+}
