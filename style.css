@@ -802,7 +802,7 @@ ul {
     justify-content: center;
     display: flex;
 }
-/*menu oculto
+
 nav.menu-lateral {
     margin-top: 125px;
     position: fixed;
@@ -858,12 +858,12 @@ ul li.item-menu a .txt-link {
     transition: .6s;
     opacity: 0;
 }
-/*menu oculto
+
 nav.menu-lateral.expandir .txt-link {
     margin-left: 15px;
     opacity: 1;
 }
-*/
+
 p {
     color: rgb(15, 15, 148); /* Cor do texto */
     font-family: Verdana, Tahoma, sans-serif, Helvetica, sans-serif; /* Famílias de fontes */
@@ -898,26 +898,6 @@ p {
 
 
 
-/*
-
-    nav.menu-lateral.expandir {
-        width: 200px;
-    }
-
-    .btn-expandir {
-        padding-left: 20px;
-    }
-
-    ul li.item-menu a .txt-link {
-        margin-left: 10px;
-    }
-
-    nav.menu-lateral:not(.expandir) .txt-link {
-        opacity: 0;
-    }
-
-
-
 
 
     nav.menu-lateral.expandir {
@@ -935,11 +915,31 @@ p {
     nav.menu-lateral:not(.expandir) .txt-link {
         opacity: 0;
     }
-*/
+
+
+
+
+
+    nav.menu-lateral.expandir {
+        width: 200px;
+    }
+
+    .btn-expandir {
+        padding-left: 20px;
+    }
+
+    ul li.item-menu a .txt-link {
+        margin-left: 10px;
+    }
+
+    nav.menu-lateral:not(.expandir) .txt-link {
+        opacity: 0;
+    }
+}
 
 
 /* Regras de mídia para dispositivos móveis */
-/*@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     nav.menu-lateral {
         top: 0;
         right: 0;
@@ -966,7 +966,7 @@ p {
     nav.menu-lateral:not(.expandir) .txt-link {
         opacity: 0;
     }
-}*/
+}
 
 /* Regras de mídia para dispositivos móveis */
 @media screen and (max-width: 768px) {
@@ -1023,25 +1023,25 @@ body {
 
 .sidebar ul li {
     padding: 15px;
-    border-bottom: 1px solid #faf7f5; /*listas do menu*/
+    border-bottom: 1px solid #444;
 }
 
 .sidebar ul li a {
-    color: rgb(241, 236, 245);
+    color: rgb(248, 246, 245);
     text-decoration: none;
     display: block;
 }
 
-.sidebar ul li a:hover { /*passar o mouse*/
-    background-color: #f36309;
+.sidebar ul li a:hover {
+    background-color: #575757;
 }
 
 .menu-toggle {
     font-size: 30px;
     cursor: pointer;
     padding: 15px;
-    background-color: #4c4848;
-    color: rgb(253, 251, 250);
+    background-color: #333;
+    color: rgb(238, 106, 5);
     position: fixed;
     top: 0;
     left: 0;
