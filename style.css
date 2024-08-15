@@ -1083,6 +1083,11 @@ main {
   .menu-lateral.ativo {
     left: 0; /* reposiciona para dentro da tela */
   }
+ }
+
+    .sidebar {
+        display: none; /* Oculta o menu lateral por padrão em dispositivos móveis */
+    }
   
   /* Estilo do botão de expandir */
   .btn-expandir {
