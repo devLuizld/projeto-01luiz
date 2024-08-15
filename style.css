@@ -802,7 +802,7 @@ ul {
     justify-content: center;
     display: flex;
 }
-
+/*menu oculto
 nav.menu-lateral {
     margin-top: 125px;
     position: fixed;
@@ -858,12 +858,12 @@ ul li.item-menu a .txt-link {
     transition: .6s;
     opacity: 0;
 }
-
+/*menu oculto
 nav.menu-lateral.expandir .txt-link {
     margin-left: 15px;
     opacity: 1;
 }
-
+*/
 p {
     color: rgb(15, 15, 148); /* Cor do texto */
     font-family: Verdana, Tahoma, sans-serif, Helvetica, sans-serif; /* Famílias de fontes */
@@ -898,6 +898,26 @@ p {
 
 
 
+/*
+
+    nav.menu-lateral.expandir {
+        width: 200px;
+    }
+
+    .btn-expandir {
+        padding-left: 20px;
+    }
+
+    ul li.item-menu a .txt-link {
+        margin-left: 10px;
+    }
+
+    nav.menu-lateral:not(.expandir) .txt-link {
+        opacity: 0;
+    }
+
+
+
 
 
     nav.menu-lateral.expandir {
@@ -915,10 +935,21 @@ p {
     nav.menu-lateral:not(.expandir) .txt-link {
         opacity: 0;
     }
-}
+*/
 
 
-
+/* Regras de mídia para dispositivos móveis */
+/*@media screen and (max-width: 768px) {
+    nav.menu-lateral {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 70px;
+        height: auto;
+        padding: 20px 1% 20px 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
 
     nav.menu-lateral.expandir {
         width: 200px;
@@ -935,8 +966,7 @@ p {
     nav.menu-lateral:not(.expandir) .txt-link {
         opacity: 0;
     }
-}
-
+}*/
 
 /* Regras de mídia para dispositivos móveis */
 @media screen and (max-width: 768px) {
@@ -967,33 +997,120 @@ p {
         opacity: 0;
     }
 }
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-/* Regras de mídia para dispositivos móveis */
-@media screen and (max-width: 768px) {
-    nav.menu-lateral {
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 70px;
-        height: auto;
-        padding: 20px 1% 20px 0;
-        box-shadow: none;
-        border-radius: 0;
+/* Menu lateral */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculta o menu lateral por padrão */
+    background-color: #333;
+    color: rgb(249, 247, 247);
+    transition: 0.3s;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #faf7f5; /*listas do menu*/
+}
+
+.sidebar ul li a {
+    color: rgb(241, 236, 245);
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover { /*passar o mouse*/
+    background-color: #f36309;
+}
+
+.menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #4c4848;
+    color: rgb(253, 251, 250);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Main content */
+main {
+    margin-left: 0;
+    padding: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: 100%;
     }
 
-    nav.menu-lateral.expandir {
-        width: 200px;
+    .menu-toggle {
+        left: 0;
     }
 
-    .btn-expandir {
-        padding-left: 20px;
-    }
-
-    ul li.item-menu a .txt-link {
-        margin-left: 10px;
-    }
-
-    nav.menu-lateral:not(.expandir) .txt-link {
-        opacity: 0;
+    .sidebar ul li {
+        text-align: center;
     }
 }
+/* Inicialmente oculta o menu lateral */
+.menu-lateral {
+    width: 250px; /* largura do menu lateral */
+    height: 100vh; /* altura total da tela */
+    position: fixed; /* fica fixo na lateral */
+    left: -250px; /* posiciona fora da tela à esquerda */
+    top: 0;
+    transition: left 0.3s ease; /* animação para o slide do menu */
+  }
+  
+  /* Mostra o menu lateral quando a classe 'ativo' é adicionada */
+  .menu-lateral.ativo {
+    left: 0; /* reposiciona para dentro da tela */
+  }
+  
+  /* Estilo do botão de expandir */
+  .btn-expandir {
+    position: absolute;
+    top: 20px; /* distância do topo */
+    right: -50px; /* posiciona o botão fora do menu lateral */
+    cursor: pointer; /* muda o cursor para pointer */
+  }
+  
+  /* Estilos do conteúdo do menu */
+  .menu-lateral ul {
+    list-style: none; /* remove marcadores das listas */
+    padding: 0; /* remove o padding */
+    margin: 0; /* remove a margem */
+  }
+  
+  .menu-lateral li {
+    padding: 15px; /* espaçamento interno dos itens */
+  }
+  
+  .menu-lateral a {
+    text-decoration: none; /* remove o sublinhado dos links */
+    color: #000; /* cor do texto */
+    display: flex; /* usa flexbox para alinhamento */
+    align-items: center; /* alinha verticalmente */
+  }
+  
+  .menu-lateral .icon {
+    margin-right: 10px; /* espaçamento entre ícone e texto */
+  }
+  
