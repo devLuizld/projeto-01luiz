@@ -939,12 +939,12 @@ p {
 
 
 /* Regras de mídia para dispositivos móveis */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
     nav.menu-lateral {
         top: 0;
         right: 0;
         bottom: 0;
-        width: 50px;
+        width: 70px;
         height: auto;
         padding: 20px 1% 20px 0;
         box-shadow: none;
@@ -969,12 +969,12 @@ p {
 }
 
 /* Regras de mídia para dispositivos móveis */
-@media screen and (max-width: 768px) {
+@media screen and (max-width:400 px) {
     nav.menu-lateral {
         top: 0;
         right: 0;
         bottom: 0;
-        width: 70px;
+        width: 30px;
         height: auto;
         padding: 20px 1% 20px 0;
         box-shadow: none;
@@ -1083,11 +1083,6 @@ main {
   .menu-lateral.ativo {
     left: 0; /* reposiciona para dentro da tela */
   }
- }
-
-    .sidebar {
-        display: none; /* Oculta o menu lateral por padrão em dispositivos móveis */
-    }
   
   /* Estilo do botão de expandir */
   .btn-expandir {
@@ -1119,3 +1114,60 @@ main {
     margin-right: 10px; /* espaçamento entre ícone e texto */
   }
   
+/* Estilo para o botão de próxima página */
+.btn-prox {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 22px;
+    color: #fff;
+    background-color: #e04c0d; /* Cor de fundo do botão */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado do link */
+    transition: background-color 0.3s ease, transform 0.5s ease; /* Transições suaves */
+}
+
+/* Efeito hover para o botão */
+.btn-prox:hover {
+    background-color: #107aeb; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}
+
+/* Efeito de foco para acessibilidade */
+.btn-prox:focus {
+    outline: none; /* Remove o contorno padrão do foco */
+    box-shadow: 0 0 0 2px rgba(28, 158, 178, 0.977); /* Adiciona uma sombra ao redor do botão */
+}
+ /*Estilo padrão: botão oculto em telas maiores */
+.btn-prox {
+    display: none;
+}
+
+ Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+    .btn-prox {
+        display: inline-block; /* Torna o botão visível em dispositivos móveis */
+       padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff; /* Cor de fundo do botão */
+       border: none;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none; /* Remove o sublinhado do link */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    
+
+     Efeito hover para o botão */
+    .btn-prox:hover {
+        background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+        transform: scale(1.05); /* Aumenta ligeiramente o botão */
+    }
+
+     Efeito de foco para acessibilidade */
+    .btn-prox:focus {
+        outline: none; /* Remove o contorno padrão do foco */
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Adiciona uma sombra ao redor do botão */
+    }
+}
