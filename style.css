@@ -1,4 +1,3 @@
-
 @charset "UTF-8";
 
 @font-face {
@@ -139,7 +138,7 @@ ul {
 
 .contact ul a img {
     max-width: 100px;
-} 
+}
 
 .contact ul a {
     justify-content: center;
@@ -208,76 +207,91 @@ nav.menu-lateral.expandir .txt-link {
 }
 
 p {
-    color: rgb(15, 15, 148); /* Cor do texto */
-    font-family: Verdana, Tahoma, sans-serif, Helvetica, sans-serif; /* Famílias de fontes */
-    text-align: center; /* Alinhamento do texto */
-    font-weight: bold; /* Aplica negrito ao texto */
+    color: rgb(15, 15, 148);
+    /* Cor do texto */
+    font-family: Verdana, Tahoma, sans-serif, Helvetica, sans-serif;
+    /* Famílias de fontes */
+    text-align: center;
+    /* Alinhamento do texto */
+    font-weight: bold;
+    /* Aplica negrito ao texto */
 }
 
 
 .videos {
-    display: flex; /* Ativa o Flexbox para o container */
-    justify-content: space-between; /* Distribui os vídeos com espaço igual entre eles */
-    padding: 0; /* Remove o padding padrão */
-    margin: 0; /* Remove a margem padrão */
-    list-style: none; /* Remove os marcadores da lista */
+    display: flex;
+    /* Ativa o Flexbox para o container */
+    justify-content: space-between;
+    /* Distribui os vídeos com espaço igual entre eles */
+    padding: 0;
+    /* Remove o padding padrão */
+    margin: 0;
+    /* Remove a margem padrão */
+    list-style: none;
+    /* Remove os marcadores da lista */
 }
 
 .videos li {
-    width: 400px; /* Define a largura dos vídeos */
-    height: 400px; /* Define a altura dos vídeos */
-    box-sizing: border-box; /* Inclui padding e border no tamanho total do item */
+    width: 400px;
+    /* Define a largura dos vídeos */
+    height: 400px;
+    /* Define a altura dos vídeos */
+    box-sizing: border-box;
+    /* Inclui padding e border no tamanho total do item */
 }
 
 /* Adiciona um espaço entre os vídeos */
-.videos li + li {
-    margin-left: 20px; /* Define a margem esquerda dos vídeos subsequentes */
+.videos li+li {
+    margin-left: 20px;
+    /* Define a margem esquerda dos vídeos subsequentes */
 }
 
 .videos iframe {
-    width: 100%; /* Define a largura do iframe como 100% do container */
-    height: 100%; /* Define a altura do iframe como 100% do container */
+    width: 100%;
+    /* Define a largura do iframe como 100% do container */
+    height: 100%;
+    /* Define a altura do iframe como 100% do container */
 }
 
 
 
 
 
-    nav.menu-lateral.expandir {
-        width: 200px;
-    }
+nav.menu-lateral.expandir {
+    width: 200px;
+}
 
-    .btn-expandir {
-        padding-left: 20px;
-    }
+.btn-expandir {
+    padding-left: 20px;
+}
 
-    ul li.item-menu a .txt-link {
-        margin-left: 10px;
-    }
+ul li.item-menu a .txt-link {
+    margin-left: 10px;
+}
 
-    nav.menu-lateral:not(.expandir) .txt-link {
-        opacity: 0;
-    }
-
-
+nav.menu-lateral:not(.expandir) .txt-link {
+    opacity: 0;
+}
 
 
 
-    nav.menu-lateral.expandir {
-        width: 200px;
-    }
 
-    .btn-expandir {
-        padding-left: 20px;
-    }
 
-    ul li.item-menu a .txt-link {
-        margin-left: 10px;
-    }
+nav.menu-lateral.expandir {
+    width: 200px;
+}
 
-    nav.menu-lateral:not(.expandir) .txt-link {
-        opacity: 0;
-    }
+.btn-expandir {
+    padding-left: 20px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 10px;
+}
+
+nav.menu-lateral:not(.expandir) .txt-link {
+    opacity: 0;
+}
 }
 
 
@@ -340,6 +354,7 @@ p {
         opacity: 0;
     }
 }
+
 /* Estilos gerais */
 body {
     margin: 0;
@@ -352,7 +367,8 @@ body {
     width: 250px;
     position: fixed;
     top: 0;
-    left: -250px; /* Oculta o menu lateral por padrão */
+    left: -250px;
+    /* Oculta o menu lateral por padrão */
     background-color: #4c4a4a;
     color: rgb(249, 247, 247);
     transition: 0.3s;
@@ -362,12 +378,13 @@ body {
 /*ocultar em celular (media para menu lateral 2)*/
 @media (max-width: 768px) {
 
-.sidebar{
-    display: none;
-}
-.menu-toggle{
-    display: none;
-}
+    .sidebar {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
 
 }
 
@@ -379,7 +396,8 @@ body {
 
 .sidebar ul li {
     padding: 15px;
-    border-bottom: 1px solid #f6f4f4; /*cor das listras do menu lateral*/
+    border-bottom: 1px solid #f6f4f4;
+    /*cor das listras do menu lateral*/
 }
 
 .sidebar ul li a {
@@ -389,7 +407,8 @@ body {
 }
 
 .sidebar ul li a:hover {
-    background-color: #eb6009; /*cor ao passar mouse no menu lateral*/
+    background-color: #eb6009;
+    /*cor ao passar mouse no menu lateral*/
 }
 
 .menu-toggle {
@@ -425,105 +444,138 @@ main {
         text-align: center;
     }
 }
+
 /* Inicialmente oculta o menu lateral */
 .menu-lateral {
-    width: 250px; /* largura do menu lateral */
-    height: 100vh; /* altura total da tela */
-    position: fixed; /* fica fixo na lateral */
-    left: -250px; /* posiciona fora da tela à esquerda */
+    width: 250px;
+    /* largura do menu lateral */
+    height: 100vh;
+    /* altura total da tela */
+    position: fixed;
+    /* fica fixo na lateral */
+    left: -250px;
+    /* posiciona fora da tela à esquerda */
     top: 0;
-    transition: left 0.3s ease; /* animação para o slide do menu */
-  }
-  
-  /* Mostra o menu lateral quando a classe 'ativo' é adicionada */
-  .menu-lateral.ativo {
-    left: 0; /* reposiciona para dentro da tela */
-  }
-  
-  /* Estilo do botão de expandir */
-  .btn-expandir {
+    transition: left 0.3s ease;
+    /* animação para o slide do menu */
+}
+
+/* Mostra o menu lateral quando a classe 'ativo' é adicionada */
+.menu-lateral.ativo {
+    left: 0;
+    /* reposiciona para dentro da tela */
+}
+
+/* Estilo do botão de expandir */
+.btn-expandir {
     position: absolute;
-    top: 20px; /* distância do topo */
-    right: -50px; /* posiciona o botão fora do menu lateral */
-    cursor: pointer; /* muda o cursor para pointer */
-  }
-  
-  /* Estilos do conteúdo do menu */
-  .menu-lateral ul {
-    list-style: none; /* remove marcadores das listas */
-    padding: 0; /* remove o padding */
-    margin: 0; /* remove a margem */
-  }
-  
-  .menu-lateral li {
-    padding: 15px; /* espaçamento interno dos itens */
-  }
-  
-  .menu-lateral a {
-    text-decoration: none; /* remove o sublinhado dos links */
-    color: #000; /* cor do texto */
-    display: flex; /* usa flexbox para alinhamento */
-    align-items: center; /* alinha verticalmente */
-  }
-  
-  .menu-lateral .icon {
-    margin-right: 10px; /* espaçamento entre ícone e texto */
-  }
-  
+    top: 20px;
+    /* distância do topo */
+    right: -50px;
+    /* posiciona o botão fora do menu lateral */
+    cursor: pointer;
+    /* muda o cursor para pointer */
+}
+
+/* Estilos do conteúdo do menu */
+.menu-lateral ul {
+    list-style: none;
+    /* remove marcadores das listas */
+    padding: 0;
+    /* remove o padding */
+    margin: 0;
+    /* remove a margem */
+}
+
+.menu-lateral li {
+    padding: 15px;
+    /* espaçamento interno dos itens */
+}
+
+.menu-lateral a {
+    text-decoration: none;
+    /* remove o sublinhado dos links */
+    color: #000;
+    /* cor do texto */
+    display: flex;
+    /* usa flexbox para alinhamento */
+    align-items: center;
+    /* alinha verticalmente */
+}
+
+.menu-lateral .icon {
+    margin-right: 10px;
+    /* espaçamento entre ícone e texto */
+}
+
 /* Estilo para o botão de próxima página */
 .btn-prox {
     display: inline-block;
     padding: 10px 20px;
     font-size: 22px;
     color: #fff;
-    background-color: #e04c0d; /* Cor de fundo do botão */
+    background-color: #e04c0d;
+    /* Cor de fundo do botão */
     border: none;
     border-radius: 5px;
     text-align: center;
-    text-decoration: none; /* Remove o sublinhado do link */
-    transition: background-color 0.3s ease, transform 0.5s ease; /* Transições suaves */
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+    transition: background-color 0.3s ease, transform 0.5s ease;
+    /* Transições suaves */
 }
 
 /* Efeito hover para o botão */
 .btn-prox:hover {
-    background-color: #107aeb; /* Cor de fundo ao passar o mouse */
-    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+    background-color: #107aeb;
+    /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05);
+    /* Aumenta ligeiramente o botão */
 }
 
 /* Efeito de foco para acessibilidade */
 .btn-prox:focus {
-    outline: none; /* Remove o contorno padrão do foco */
-    box-shadow: 0 0 0 2px rgba(28, 158, 178, 0.977); /* Adiciona uma sombra ao redor do botão */
+    outline: none;
+    /* Remove o contorno padrão do foco */
+    box-shadow: 0 0 0 2px rgba(28, 158, 178, 0.977);
+    /* Adiciona uma sombra ao redor do botão */
 }
- /*Estilo padrão: botão oculto em telas maiores */
+
+/*Estilo padrão: botão oculto em telas maiores */
 .btn-prox {
     display: none;
 }
 
- Estilo para dispositivos móveis */
-@media (max-width: 768px){
+/*Estilo para dispositivos móveis */ 
+@media (max-width: 768px) {
     .btn-prox {
-        display: inline-block; /* Torna o botão visível em dispositivos móveis */
-       padding: 10px 20px;
+        display: inline-block;
+        /* Torna o botão visível em dispositivos móveis */
+        padding: 10px 20px;
         font-size: 16px;
         color: #fff;
-        background-color: #007bff; /* Cor de fundo do botão */
-       border: none;
+        background-color: #007bff;
+        /* Cor de fundo do botão */
+        border: none;
         border-radius: 5px;
         text-align: center;
-        text-decoration: none; /* Remove o sublinhado do link */
-        transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
- }
-   
+        text-decoration: none;
+        /* Remove o sublinhado do link */
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        /* Transições suaves */
+    }
+}
 
-     Efeito hover para o botão */
-    .btn-prox:hover {
-        background-color: #0056b3; /* Cor de fundo ao passar o mouse */
-        transform: scale(1.05); /* Aumenta ligeiramente o botão */
+    Efeito hover para o botão */ .btn-prox:hover {
+        background-color: #0056b3;
+        /* Cor de fundo ao passar o mouse */
+        transform: scale(1.05);
+        /* Aumenta ligeiramente o botão */
     }
 
-     Efeito de foco para acessibilidade */
-    .btn-prox:focus {
-        outline: none; /* Remove o contorno padrão do foco */
-        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Adiciona uma sombra ao redor do botão */
+    Efeito de foco para acessibilidade */ .btn-prox:focus {
+        outline: none;
+        /* Remove o contorno padrão do foco */
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+        /* Adiciona uma sombra ao redor do botão */
     }
