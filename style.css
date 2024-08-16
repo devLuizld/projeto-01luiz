@@ -1138,11 +1138,7 @@ main {
 .btn-prox:focus {
     outline: none; /* Remove o contorno padrão do foco */
     box-shadow: 0 0 0 2px rgba(28, 158, 178, 0.977); /* Adiciona uma sombra ao redor do botão */
-}
- /*Estilo padrão: botão oculto em telas maiores */
-.btn-prox {
-    display: none;
-}
+
 
  Estilo para dispositivos móveis */
 @media (max-width: 768px) {
