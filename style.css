@@ -365,7 +365,7 @@ body {
 .sidebar{
     display: none;
 }
-.close-btn{
+.menu-toggle{
     display: none;
 }
 
@@ -501,7 +501,7 @@ main {
 }
 
  Estilo para dispositivos móveis */
-@media (max-width: 768px) 
+@media (max-width: 768px){
     .btn-prox {
         display: inline-block; /* Torna o botão visível em dispositivos móveis */
        padding: 10px 20px;
@@ -513,8 +513,7 @@ main {
         text-align: center;
         text-decoration: none; /* Remove o sublinhado do link */
         transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
-
-}
+ }
    
 
      Efeito hover para o botão */
