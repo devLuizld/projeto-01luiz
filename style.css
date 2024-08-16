@@ -292,38 +292,7 @@ ul li.item-menu a .txt-link {
 nav.menu-lateral:not(.expandir) .txt-link {
     opacity: 0;
 }
-}
 
-
-/* Regras de mídia para dispositivos móveis */
-@media screen and (max-width: 768px) {
-    nav.menu-lateral {
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 70px;
-        height: auto;
-        padding: 20px 1% 20px 0;
-        box-shadow: none;
-        border-radius: 0;
-    }
-
-    nav.menu-lateral.expandir {
-        width: 200px;
-    }
-
-    .btn-expandir {
-        padding-left: 20px;
-    }
-
-    ul li.item-menu a .txt-link {
-        margin-left: 10px;
-    }
-
-    nav.menu-lateral:not(.expandir) .txt-link {
-        opacity: 0;
-    }
-}
 
 /* Regras de mídia para dispositivos móveis */
 @media screen and (max-width:400 px) {
@@ -554,7 +523,7 @@ main {
         padding: 10px 20px;
         font-size: 16px;
         color: #fff;
-        background-color: #007bff;
+        background-color: #191412;
         /* Cor de fundo do botão */
         border: none;
         border-radius: 5px;
@@ -579,3 +548,16 @@ main {
         box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
         /* Adiciona uma sombra ao redor do botão */
     }
+
+ /*regra de video para dispositivos móveis*/
+ @media (max-width: 768px) {
+    .videos {
+        display: block;
+    }
+
+    .videos li {
+        width: 100%; /* O vídeo ocupa 100% da largura da tela */
+        height: auto; /* A altura se ajusta automaticamente */
+        margin-bottom: 20px; /* Espaço entre os vídeos */
+    }
+}
