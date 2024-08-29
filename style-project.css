@@ -51,7 +51,7 @@ h2 {
 }
 
 .btn-voltar:hover {
-    background-color: #1619e3; /* Laranja mais escuro para hover */
+    background-color: #1619e3; 
     transform: scale(1.05);
 }
 
@@ -79,6 +79,7 @@ body {
     justify-content: center;
     margin: 20px 0; /* Ajusta o espaçamento ao redor da galeria */
 }
+
 
 .item-projeto {
     width: 400px; /* Largura fixa para cada item */
@@ -119,4 +120,41 @@ body {
     font-size: 1.2rem; /* Tamanho da fonte */
     margin: 0; /* Remove margens padrão */
     font-weight: bold; /* Negrito para destacar o texto */
+}
+/* Estilos para o botão de projetos no celular */
+.project-button-container {
+    display: none; /* Oculta o botão por padrão */
+    position: fixed;
+    bottom: 20px; /* Posiciona o botão no canto inferior */
+    right: 20px; /* Posiciona o botão no canto direito */
+    z-index: 1000; /* Garante que o botão esteja acima do conteúdo */
+}
+
+.project-button {
+    background-color: #f3440e; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    font-size: 18px; /* Tamanho da fonte do botão */
+    font-family: Arial, sans-serif; /* Fonte do botão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .project-button-container {
+        display: block; /* Mostra o botão em dispositivos móveis */
+    }
+}
+
+.extensão:hover{
+    transform: scale(1.4);  
+   color: #f3440e;
+    }
+.extensão{
+    background-color: #b9bbc2;
+    
 }
