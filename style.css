@@ -565,12 +565,12 @@ main {
 }
 
 .redes img:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
 
 }
 
 .contact img:hover{
-    transform: scale(1.1);
+    transform: scale(1.5);
 
 } 
 
