@@ -82,8 +82,8 @@ body {
 
 
 .item-projeto {
-    width: 300px; /* Largura fixa para cada item */
-    height: 300px; /* Altura fixa para cada item */
+    width: 400px; /* Largura fixa para cada item */
+    height: 400px; /* Altura fixa para cada item */
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(245, 238, 238, 0.982);
