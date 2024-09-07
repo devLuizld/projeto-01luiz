@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'letrabonita';
+    src: url('fonts/ORGANICAL\ PERSONAL\ USE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Contêiner para as imagens */
+.imgti {
+    position: relative; /* Necessário para a sobreposição das imagens */
+    width: 1000px; /* Largura fixa de 1000px */
+    height: auto; /* Altura ajustável conforme a proporção das imagens */
+    margin: auto; /* Centraliza o contêiner horizontalmente */
+    overflow: hidden; /* Garante que qualquer parte das imagens que exceda o contêiner seja ocultada */
+    display: flex; /* Utiliza Flexbox para centralizar verticalmente */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: space-around; /* Alinha horizontalmente no centro */
+    min-height: 100vh; /* Garante que o contêiner ocupe pelo menos a altura da viewport */
+    border-radius: 10px;
+    
+    
+}
+@media only screen and (max-width: 450px) {
+    .imgti img {
+        margin-top: 170px;
+    }
+
+    .imgti {
+        background-color: #2e2d4c;
+        box-shadow: 0 4px 8px rgba(245, 238, 238, 0.982);
+    transition: transform 0.3s ease;
+    }
+}
+
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #f6460c; /* Laranja */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 20px 0; /* Espaçamento vertical */
+   
+}
+
+.btn-voltar:hover {
+    background-color: #1619e3; 
+    transform: scale(1.05);
+}
+
+.btn-voltar:active {
+    background-color: #3630d2; /* Laranja ainda mais escuro para active */
+}
+.btn3{
+   text-align: center;
+}
+
+
+
+
+
+/* Imagem principal e imagem de hover */
+.imagem-principal,
+.imagem-hover {
+    position: absolute; /* Permite sobrepor as imagens */
+    top: 0; /* Alinha ao topo do contêiner */
+    left: 0; /* Alinha à esquerda do contêiner */
+    width: 100%; /* Faz com que as imagens ocupem 100% da largura do contêiner */
+    height: auto; /* Ajusta a altura conforme necessário para manter a proporção */
+    object-fit: cover; /* Faz com que as imagens cubram o contêiner mantendo a proporção */
+}
+
+/* Imagem de hover */
+.imagem-hover {
+    opacity: 0; /* Torna a imagem de hover invisível por padrão */
+    transition: opacity 2s; /* Transição suave para a opacidade */
+    
+}
+
+/* Estilo aplicado quando o mouse está sobre o contêiner */
+.imgti:hover .imagem-hover {
+    opacity: 1; /* Torna a imagem de hover visível quando o mouse está sobre o contêiner */
+}
+
+
+    .imagem-principal,
+    .imagem-hover {
+        width: 100%; /* Ajusta a largura das imagens para 100% do contêiner */
+        height: auto; /* Ajusta a altura das imagens para manter a proporção */
+    }
+
+
+
+
+body{
+    background-color:  rgb(59, 62, 62);
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 450px){
+    .imgti{
+
+    width:100%;
+    flex-direction: column;
+    
+
+} 
+}
+
+
+
+h1{
+    font-family: 'letrabonita', Arial, sans-serif;
+    
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+hr.linha{
+   border: 2px solid #6e756e;
+}
