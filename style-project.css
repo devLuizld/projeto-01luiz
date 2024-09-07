@@ -24,7 +24,7 @@ h1 {
 }
 
 /* Estilos para subtítulos */
-h2 {
+h2.sub {
     font-family: 'cursiva-paragrafo', Arial, sans-serif;
     color: #e7680e; /* Cor do texto dos subtítulos */
     text-align: center;
@@ -103,6 +103,7 @@ body {
 
 .item-projeto img:hover {
     transform: scale(1.1);
+    
 }
 
 /* Estilo para o container de informações do projeto */
@@ -150,11 +151,6 @@ body {
     }
 }
 
-.extensão:hover{
-    transform: scale(1.4);  
-   color: #f3440e;
-    }
-.extensão{
-    background-color: #b9bbc2;
-    
-}
+
+
+
